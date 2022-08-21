@@ -34,17 +34,17 @@ function Copyright() {
 
 const cards = [
     {
-        img: 'https://source.unsplash.com/random',
-        name: 'Nearby NFTs',
+        img: './img/CZ.png',
+        name: 'Nearby CZs',
         content: 'This is a media card. You can use this section to describe the content.'
     },
     {
-        img: 'https://source.unsplash.com/random',
+        img: './img/rewards.png',
         name: 'Prizes/Rewards',
         content: 'This is a media card. You can use this section to describe the content.'
     },
     {
-        img: 'https://source.unsplash.com/random',
+        img: './img/public.jpeg',
         name: 'Public Spaces',
         content: 'This is a media card. You can use this section to describe the content.'
     }
@@ -175,6 +175,7 @@ export default function Landing() {
                     }}
                     image={card.img}
                     alt="random"
+                    style={{backgroundSize:'contain', objectFit:'contain'}}
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2" style={{color:'#fff' }}>
