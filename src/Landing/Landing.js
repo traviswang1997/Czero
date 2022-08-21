@@ -18,6 +18,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Divider } from '@mui/material';
 import PlaceIcon from '@mui/icons-material/Place';
 import { ReactComponent as Logo } from './logo.svg';
+import {Modal} from '@mui/material';
 
 function Copyright() {
   return (
@@ -52,7 +53,23 @@ const cards = [
 
 const theme = createTheme();
 
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: '80%',
+    bgcolor: '#2b2b2b',
+    boxShadow: 24,
+    p:1 ,
+    borderRadius: '16px'
+  };
+
 export default function Landing() {
+    const [open, setOpen] = React.useState()
+    const handleModal = () => {
+        setOpen(!open)
+    }
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -103,32 +120,55 @@ export default function Landing() {
             <Typography
               component="h1"
               variant="h5"
-              fontFamily={'manrope'}
-              align="center"
+              fontFamily={'monospace'}
+              align="left"
               color="#fff"
               gutterBottom
-              style={{marginBottom:'50px', fontWeight:'600'}}
+              style={{marginBottom:'10px', fontWeight:'600', width:'500px'}}
             >
-              What's Net Zero Emission (NZO)?
+              We at Czero are helping in our own way to contribute to this goal.
             </Typography>
-            <Typography variant="h6" align="center" color="#fff" fontFamily={'manrope'} paragraph>
-            Net zero refers to achieving an overall balance between greenhouse gas emissions produced and green house gas emission taken out of the atmosphere. 
+            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph>
+            Australia has committed to Net Zero Emissions by 2050. This does an overall balance between greenhouse gas produced, and greenhouse gas taken out of the atmosphere. 
             </Typography>
-            <Typography variant="h6" align="center" color="#fff" fontFamily={'manrope'} paragraph>
-            Net zero means we can still produce some emission, as long as they are offset by processes that reduce green gases already in the atmosphere
-            </Typography>
+
             <Stack
               sx={{ pt: 4, pb: 4 }}
               direction="row"
               spacing={2}
-              justifyContent="center"
+              justifyContent="space-between"
             >
-              <Button style={{backgroundColor:'#2AA92A', color:'#fff', width:'300px'}} variant="contained">Join us</Button>
+                <Button style={{backgroundColor:'#2AA92A', color:'#fff', width:'300px'}} variant="contained">Join us</Button>
+                <Button style={{backgroundColor:'#2b2b2b', color:'#fff', width:'300px', borderColor:'#fff'}} variant="outlined" onClick={handleModal}>About us</Button>
+                <Modal
+                open={open}
+                onClose={handleModal}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                >
+                <Box sx={style}>
+                    <Container maxWidth="md" style={{backgroundColor:'#2b2b2b', justifyContent:'center'}}>
+                        <Typography variant="h4" align="center" color="#fff" fontFamily={'monospace'} sx={{fontWeight:'600'}} style={{marginBottom:'20px'}} >
+                        About Us
+                        </Typography>
+                            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
+                            Czero aims to promote collaboration in a carbon controlled way.  We are a technology company that aims to reduce carbon emission through the utilisation of modern transport systems, and public landscapes. 
+                            </Typography>
+                            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
+                            Czero incentivises people to utilise public landscapes by providing the CZ shared value property rewards system. Business is creating the CZ for their own public spaces and which can be the chance to get tax deduction. Visitors of the public spaces will also get the shared value of the CZ and which can be redeemed to real prizes. 
+                            </Typography>
+                            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} >
+                            We believe at Czero that everyone has a part to play in reaching Net 2050.
+                            </Typography>
+                    </Container>
+                </Box>
+                </Modal>
             </Stack>
             <iframe width="100%" height="315" allow='autoplay' allowfullscreen style={{border:'none'}}
                 src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
             </iframe>
           </Container>
+          <hr style={{backgroundColor:'#2b2b2b', marginTop: '100px', color:'#fff', width:'40%'}} />
         </Box>
         <Box
           sx={{
@@ -137,13 +177,20 @@ export default function Landing() {
             pb: 6,
           }}
         >
-        <Container maxWidth="sm" style={{backgroundColor:'#2b2b2b', display:'flex', justifyContent:'center'}}>
-        <Typography variant="h4" align="center" color="#fff" fontFamily={'manrope'} sx={{fontWeight:'600'}}>
+        <Container maxWidth="md" style={{backgroundColor:'#2b2b2b', display:'flex', justifyContent:'center'}}>
+        <Typography variant="h4" align="center" color="#fff" fontFamily={'monospace'} sx={{fontWeight:'600'}} >
            Public Transport + Public Spaces
         </Typography>
-    
+            <Container maxWidth="md" style={{backgroundColor:'#2b2b2b', display:'flex', flexDirection:'column', justifyContent:'center'}}>
+            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
+            Australia’s transport industry is the third highest emitter of greenhouse gasses. A aspect of reaching Net2050 is to address the mode of transport within Australia through micro-mobility. Greater vegetation in open city spaces is known to help absorb carbon dioxide thus helping offset emissions. 
+            </Typography>
+            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
+            Czero sees this as an opportunity to connect both aspects to promote a better and healthier environment for our future generation
+            </Typography>
+            </Container>
         </Container>
-        <hr style={{marginTop: '20px', color:'#fff', width:'80%'}} />
+        <hr style={{marginTop: '20px', color:'#fff', width:'50%'}} />
         </Box>
         <Box
           sx={{
@@ -194,26 +241,26 @@ export default function Landing() {
       {/* Footer */}
       <Box sx={{ bgcolor: '#2b2b2b', p: 6 }} component="footer">
         <Typography style={{ color:'#fff'}} variant="h6" align="center" gutterBottom>
-          Czero
+          Resource link
         </Typography>
-        <div style={{display:'flex', justifyContent:'center', marginTop:'50px'}}>
+        <div style={{display:'flex', justifyContent:'center', marginTop:'10px', marginBottom:'30px'}}>
         <Button
           variant="subtitle1"
           align="center"
           color="#fff"
           component="p"
-          style={{color:'#fff'}}
+          style={{color:'orange'}}
         >
-          Contact Us
+          Github
         </Button>
         <Button
           variant="subtitle1"
           align="center"
           color="#fff"
           component="p"
-          style={{marginLeft:'20px', color:'#fff'}}
+          style={{marginLeft:'20px', color:'orange'}}
         >
-          Link
+          Figma
         </Button>
         </div>
         <Copyright />
