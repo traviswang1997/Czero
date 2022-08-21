@@ -60,14 +60,7 @@ export default function Landing() {
         <Toolbar sx={{ flexWrap: 'wrap', backgroundColor:'#2AA92A' }}>
           <Logo style={{height:'60px'}} width='60px' />
           <nav>
-            <Link
-              variant="button"
-              href="#"
-              sx={{ my: 1, mx: 1 }}
-              style={{color:'white'}}
-            >
-              Dashboard
-            </Link>
+            
             <Link
               variant="button"
               href="#"
@@ -77,12 +70,12 @@ export default function Landing() {
             >
               Profile
             </Link>
-            <PlaceIcon style={{position:'absolute', left: '265px', top: '20px', color: 'white'}}/>
+            <PlaceIcon style={{position:'absolute', left: '165px', top: '20px', color: 'white'}}/>
             <Link
               variant="button"
               href="#"
               sx={{ my: 1, mx: 1.5 }}
-              style={{position:'absolute', left: '280px', top: '12px', color: 'white'}}
+              style={{position:'absolute', left: '180px', top: '12px', color: 'white'}}
             >
               Adelaide
             </Link>
