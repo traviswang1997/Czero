@@ -37,17 +37,17 @@ const cards = [
     {
         img: './img/CZ.png',
         name: 'Nearby CZs',
-        content: 'This is a media card. You can use this section to describe the content.'
+        content: 'Collecting your CZ to redeem prizes'
     },
     {
         img: './img/rewards.png',
         name: 'Prizes/Rewards',
-        content: 'This is a media card. You can use this section to describe the content.'
+        content: 'List of amzing prizes avaiblae here'
     },
     {
         img: './img/public.jpeg',
         name: 'Public Spaces',
-        content: 'This is a media card. You can use this section to describe the content.'
+        content: 'Check out where are the public spaces around you'
     }
 ];
 
@@ -119,17 +119,17 @@ export default function Landing() {
           <Container maxWidth="md">
             <Typography
               component="h1"
-              variant="h5"
+              variant="h3"
               fontFamily={'monospace'}
               align="left"
               color="#fff"
               gutterBottom
-              style={{marginBottom:'10px', fontWeight:'600', width:'500px'}}
+              style={{marginBottom:'10px', fontWeight:'600', width:'70%'}}
             >
-              We at Czero are helping in our own way to contribute to this goal.
+              We at Czero are helping in our own way to contribute to Net Zero Emission
             </Typography>
             <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph>
-            Australia has committed to Net Zero Emissions by 2050. This does an overall balance between greenhouse gas produced, and greenhouse gas taken out of the atmosphere. 
+            Australia has committed to Net Zero Emissions by 2050. This does an overall balance between greenhouse gas produced, and greenhouse gas taken out of the atmosphere
             </Typography>
 
             <Stack
@@ -152,13 +152,13 @@ export default function Landing() {
                         About Us
                         </Typography>
                             <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
-                            Czero aims to promote collaboration in a carbon controlled way.  We are a technology company that aims to reduce carbon emission through the utilisation of modern transport systems, and public landscapes. 
+                            Czero aims to promote collaboration in a carbon controlled way.  We are a technology company that aims to reduce carbon emission through the utilisation of modern transport systems, and public landscapes
                             </Typography>
                             <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
-                            Czero incentivises people to utilise public landscapes by providing the CZ shared value property rewards system. Business is creating the CZ for their own public spaces and which can be the chance to get tax deduction. Visitors of the public spaces will also get the shared value of the CZ and which can be redeemed to real prizes. 
+                            Czero incentivises people to utilise public landscapes by providing the CZ shared value property rewards system. Business is creating the CZ for their own public spaces and which can be the chance to get tax deduction. Visitors of the public spaces will also get the shared value of the CZ and which can be redeemed to real prizes
                             </Typography>
                             <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} >
-                            We believe at Czero that everyone has a part to play in reaching Net 2050.
+                            We believe at Czero that everyone has a part to play in reaching Net 2050
                             </Typography>
                     </Container>
                 </Box>
@@ -183,7 +183,7 @@ export default function Landing() {
         </Typography>
             <Container maxWidth="md" style={{backgroundColor:'#2b2b2b', display:'flex', flexDirection:'column', justifyContent:'center'}}>
             <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
-            Australia’s transport industry is the third highest emitter of greenhouse gasses. A aspect of reaching Net2050 is to address the mode of transport within Australia through micro-mobility. Greater vegetation in open city spaces is known to help absorb carbon dioxide thus helping offset emissions. 
+            Australia’s transport industry is the third highest emitter of greenhouse gasses. A aspect of reaching Net2050 is to address the mode of transport within Australia through micro-mobility. Greater vegetation in open city spaces is known to help absorb carbon dioxide thus helping offset emissions
             </Typography>
             <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
             Czero sees this as an opportunity to connect both aspects to promote a better and healthier environment for our future generation
@@ -250,6 +250,7 @@ export default function Landing() {
           color="#fff"
           component="p"
           style={{color:'orange'}}
+          onClick={() => window.open('https://github.com/traviswang1997/Czero')}
         >
           Github
         </Button>
@@ -259,6 +260,7 @@ export default function Landing() {
           color="#fff"
           component="p"
           style={{marginLeft:'20px', color:'orange'}}
+          onClick={() => window.open('https://www.figma.com/file/qlqnxUpFztXMo6whDYQTCF/GovHack---NetZero---SSH?node-id=12%3A1390')}
         >
           Figma
         </Button>
