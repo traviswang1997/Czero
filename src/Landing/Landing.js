@@ -103,19 +103,19 @@ export default function Landing() {
             <Typography
               component="h1"
               variant="h5"
-              fontFamily={'Monospace'}
+              fontFamily={'manrope'}
               align="center"
               color="#fff"
               gutterBottom
-              style={{marginBottom:'50px'}}
+              style={{marginBottom:'50px', fontWeight:'600'}}
             >
               What's Net Zero Emission (NZO)?
             </Typography>
-            <Typography variant="h6" align="center" color="#fff" fontFamily={'Monospace'} paragraph>
+            <Typography variant="h6" align="center" color="#fff" fontFamily={'manrope'} paragraph>
             Net zero refers to achieving an overall balance between greenhouse gas emissions produced and green house gas emission taken out of the atmosphere. 
             </Typography>
-            <Typography variant="h6" align="center" color="#fff" fontFamily={'Monospace'} paragraph>
-            Net zero means we can still produce some emission, as long as they are offset by processes that REDUCE GREENHOUSE GASES already in the atmosphere
+            <Typography variant="h6" align="center" color="#fff" fontFamily={'manrope'} paragraph>
+            Net zero means we can still produce some emission, as long as they are offset by processes that reduce green gases already in the atmosphere
             </Typography>
             <Stack
               sx={{ pt: 4, pb: 4 }}
@@ -123,8 +123,7 @@ export default function Landing() {
               spacing={2}
               justifyContent="center"
             >
-              <Button style={{backgroundColor:'#2AA92A', color:'#fff'}} variant="contained">First action</Button>
-              <Button style={{backgroundColor:'#2AA92A', color:'#fff'}} variant="contained">Second action</Button>
+              <Button style={{backgroundColor:'#2AA92A', color:'#fff', width:'300px'}} variant="contained">Join us</Button>
             </Stack>
             <iframe width="100%" height="315" allow='autoplay' allowfullscreen style={{border:'none'}}
                 src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
@@ -139,8 +138,8 @@ export default function Landing() {
           }}
         >
         <Container maxWidth="sm" style={{backgroundColor:'#2b2b2b', display:'flex', justifyContent:'center'}}>
-        <Typography variant="h4" align="center" color="#fff" fontFamily={'Monospace'} sx={{fontWeight:'600'}}>
-           Transport + Public Spaces
+        <Typography variant="h4" align="center" color="#fff" fontFamily={'manrope'} sx={{fontWeight:'600'}}>
+           Public Transport + Public Spaces
         </Typography>
     
         </Container>
