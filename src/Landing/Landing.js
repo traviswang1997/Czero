@@ -24,8 +24,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="#fff" align="center">
       {'Copyright © '}
-      <Link color="#fff" href="https://mui.com/">
-        Your Website
+      <Link color="#fff" href="http://czero.vercel.app/">
+        Czero
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -58,10 +58,10 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '80%',
+    width: '50%',
     bgcolor: '#2b2b2b',
     boxShadow: 24,
-    p:1 ,
+    p:5 ,
     borderRadius: '16px'
   };
 
@@ -83,7 +83,6 @@ export default function Landing() {
               href="#"
               sx={{ my: 1, mx: 1 }}
               style={{color:'white'}}
-
             >
               Profile
             </Link>
@@ -136,9 +135,22 @@ export default function Landing() {
               sx={{ pt: 4, pb: 4 }}
               direction="row"
               spacing={2}
-              justifyContent="space-between"
+              justifyContent="left"
+              fontFamily={'monospace'}
             >
                 <Button style={{backgroundColor:'#2AA92A', color:'#fff', width:'300px'}} variant="contained">Join us</Button>
+                
+            </Stack>
+            <iframe width="100%" height="315" allow='autoplay' allowfullscreen style={{border:'none', borderRadius:'16px'}}
+                src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+            </iframe>
+            <Stack
+              sx={{ pt: 4, pb: 4 }}
+              direction="row"
+              spacing={2}
+              justifyContent="space-between"
+              fontFamily={'monospace'}
+            >
                 <Button style={{backgroundColor:'#2b2b2b', color:'#fff', width:'300px', borderColor:'#fff'}} variant="outlined" onClick={handleModal}>About us</Button>
                 <Modal
                 open={open}
@@ -163,10 +175,55 @@ export default function Landing() {
                     </Container>
                 </Box>
                 </Modal>
+                <Button style={{backgroundColor:'#2b2b2b', color:'#fff', width:'300px', borderColor:'#fff'}} variant="outlined" onClick={handleModal}>How does it work?</Button>
+                <Modal
+                open={open}
+                onClose={handleModal}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                >
+                <Box sx={style}>
+                    <Container maxWidth="md" style={{backgroundColor:'#2b2b2b', justifyContent:'center'}}>
+                        <Typography variant="h4" align="center" color="#fff" fontFamily={'monospace'} sx={{fontWeight:'600'}} style={{marginBottom:'20px'}} >
+                        How does it work?
+                        </Typography>
+                            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
+                            Czero aims to promote collaboration in a carbon controlled way.  We are a technology company that aims to reduce carbon emission through the utilisation of modern transport systems, and public landscapes
+                            </Typography>
+                            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
+                            Czero incentivises people to utilise public landscapes by providing the CZ shared value property rewards system. Business is creating the CZ for their own public spaces and which can be the chance to get tax deduction. Visitors of the public spaces will also get the shared value of the CZ and which can be redeemed to real prizes
+                            </Typography>
+                            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} >
+                            We believe at Czero that everyone has a part to play in reaching Net 2050
+                            </Typography>
+                    </Container>
+                </Box>
+                </Modal>
+                <Button style={{backgroundColor:'#2b2b2b', color:'#fff', width:'300px', borderColor:'#fff'}} variant="outlined" onClick={handleModal}>Coming soon..</Button>
+                <Modal
+                open={open}
+                onClose={handleModal}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                >
+                <Box sx={style}>
+                    <Container maxWidth="md" style={{backgroundColor:'#2b2b2b', justifyContent:'center'}}>
+                        <Typography variant="h4" align="center" color="#fff" fontFamily={'monospace'} sx={{fontWeight:'600'}} style={{marginBottom:'20px'}} >
+                        Coming soon..
+                        </Typography>
+                            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
+                            Czero aims to promote collaboration in a carbon controlled way.  We are a technology company that aims to reduce carbon emission through the utilisation of modern transport systems, and public landscapes
+                            </Typography>
+                            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
+                            Czero incentivises people to utilise public landscapes by providing the CZ shared value property rewards system. Business is creating the CZ for their own public spaces and which can be the chance to get tax deduction. Visitors of the public spaces will also get the shared value of the CZ and which can be redeemed to real prizes
+                            </Typography>
+                            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} >
+                            We believe at Czero that everyone has a part to play in reaching Net 2050
+                            </Typography>
+                    </Container>
+                </Box>
+                </Modal>
             </Stack>
-            <iframe width="100%" height="315" allow='autoplay' allowfullscreen style={{border:'none'}}
-                src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-            </iframe>
           </Container>
           <hr style={{backgroundColor:'#2b2b2b', marginTop: '100px', color:'#fff', width:'40%'}} />
         </Box>
