@@ -127,7 +127,7 @@ export default function Landing() {
             >
               We at Czero are helping in our own way to contribute to Net Zero Emission
             </Typography>
-            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph>
+            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph style={{fontFamily:'monospace', fontWeight:'600'}}>
             Australia has committed to Net Zero Emissions by 2050. This does an overall balance between greenhouse gas produced, and greenhouse gas taken out of the atmosphere
             </Typography>
 
@@ -138,7 +138,7 @@ export default function Landing() {
               justifyContent="left"
               fontFamily={'monospace'}
             >
-                <Button style={{backgroundColor:'#2AA92A', color:'#fff', width:'300px'}} variant="contained">Join us</Button>
+                <Button style={{backgroundColor:'#2AA92A', color:'#fff', width:'300px', fontFamily:'monospace', fontWeight:'600'}} variant="contained">Join us</Button>
                 
             </Stack>
             <iframe width="100%" height="315" allow='autoplay' allowfullscreen style={{border:'none', borderRadius:'16px'}}
@@ -151,7 +151,7 @@ export default function Landing() {
               justifyContent="space-between"
               fontFamily={'monospace'}
             >
-                <Button style={{backgroundColor:'#2b2b2b', color:'#fff', width:'300px', borderColor:'#fff'}} variant="outlined" onClick={handleModal}>About us</Button>
+                <Button style={{backgroundColor:'#2b2b2b', color:'#fff', width:'300px', borderColor:'#fff', fontFamily:'monospace', fontWeight:'600'}} variant="outlined" onClick={handleModal}>About us</Button>
                 <Modal
                 open={open}
                 onClose={handleModal}
@@ -175,7 +175,7 @@ export default function Landing() {
                     </Container>
                 </Box>
                 </Modal>
-                <Button style={{backgroundColor:'#2b2b2b', color:'#fff', width:'300px', borderColor:'#fff'}} variant="outlined" onClick={handleModal}>How does it work?</Button>
+                <Button style={{backgroundColor:'#2b2b2b', color:'#fff', width:'300px', borderColor:'#fff', fontFamily:'monospace', fontWeight:'600'}} variant="outlined" onClick={handleModal}>How does it work?</Button>
                 <Modal
                 open={open}
                 onClose={handleModal}
@@ -199,7 +199,7 @@ export default function Landing() {
                     </Container>
                 </Box>
                 </Modal>
-                <Button style={{backgroundColor:'#2b2b2b', color:'#fff', width:'300px', borderColor:'#fff'}} variant="outlined" onClick={handleModal}>Coming soon..</Button>
+                <Button style={{backgroundColor:'#2b2b2b', color:'#fff', width:'300px', borderColor:'#fff', fontFamily:'monospace', fontWeight:'600'}} variant="outlined" onClick={handleModal}>Coming soon..</Button>
                 <Modal
                 open={open}
                 onClose={handleModal}
@@ -235,14 +235,14 @@ export default function Landing() {
           }}
         >
         <Container maxWidth="md" style={{backgroundColor:'#2b2b2b', display:'flex', justifyContent:'center'}}>
-        <Typography variant="h4" align="center" color="#fff" fontFamily={'monospace'} sx={{fontWeight:'600'}} >
+        <Typography variant="h4" align="center" color="#fff" fontFamily={'monospace'} sx={{fontWeight:'600', fontFamily:'monospace'}} >
            Public Transport + Public Spaces
         </Typography>
             <Container maxWidth="md" style={{backgroundColor:'#2b2b2b', display:'flex', flexDirection:'column', justifyContent:'center'}}>
-            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
+            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph sx={{fontWeight:'500', fontFamily:'monospace'}}>
             Australia’s transport industry is the third highest emitter of greenhouse gasses. A aspect of reaching Net2050 is to address the mode of transport within Australia through micro-mobility. Greater vegetation in open city spaces is known to help absorb carbon dioxide thus helping offset emissions
             </Typography>
-            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph >
+            <Typography variant='subtitle2' align="left" color="#fff" fontFamily={'monospace'} paragraph sx={{fontWeight:'500', fontFamily:'monospace'}}>
             Czero sees this as an opportunity to connect both aspects to promote a better and healthier environment for our future generation
             </Typography>
             </Container>
@@ -274,15 +274,15 @@ export default function Landing() {
                     style={{backgroundSize:'contain', objectFit:'contain'}}
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2" style={{color:'#fff' }}>
+                    <Typography gutterBottom variant="h5" component="h2" style={{color:'#fff', fontWeight:'600', fontFamily:'monospace'  }}>
                       {card.name}
                     </Typography>
-                    <Typography style={{color:'#fff' }}>
+                    <Typography style={{color:'#fff', fontWeight:'500', fontFamily:'monospace'  }}>
                       {card.content}
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button  size="small">View</Button>
+                    <Button style={{fontWeight:'600', fontFamily:'monospace' }} size="medium">View</Button>
                   </CardActions>
                 </Card>
               </Grid>
@@ -290,14 +290,14 @@ export default function Landing() {
           </Grid>
         </Container>
         <Container maxWidth='sm' style={{display:'flex', justifyContent:'space-around'}}>
-            <Button style={{backgroundColor:'#2AA92A', color:'#fff'}} variant="contained" size='large'>Download App</Button>
-            <Button style={{backgroundColor:'#2AA92A', color:'#fff'}} variant="contained" size='large'>Contact Us</Button>
+            <Button style={{backgroundColor:'#2AA92A', color:'#fff', fontWeight:'600', fontFamily:'monospace' }} variant="contained" size='large'>Download App</Button>
+            <Button style={{backgroundColor:'#2AA92A', color:'#fff', fontWeight:'600', fontFamily:'monospace' }} variant="contained" size='large'>Contact Us</Button>
         </Container>
         </Box>
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: '#2b2b2b', p: 6 }} component="footer">
-        <Typography style={{ color:'#fff'}} variant="h6" align="center" gutterBottom>
+        <Typography style={{ color:'#fff', fontWeight:'600', fontFamily:'monospace' }} variant="h6" align="center" gutterBottom>
           Resource link
         </Typography>
         <div style={{display:'flex', justifyContent:'center', marginTop:'10px', marginBottom:'30px'}}>
@@ -306,7 +306,7 @@ export default function Landing() {
           align="center"
           color="#fff"
           component="p"
-          style={{color:'orange'}}
+          style={{color:'orange', fontWeight:'600', fontFamily:'monospace' }}
           onClick={() => window.open('https://github.com/traviswang1997/Czero')}
         >
           Github
@@ -316,7 +316,7 @@ export default function Landing() {
           align="center"
           color="#fff"
           component="p"
-          style={{marginLeft:'20px', color:'orange'}}
+          style={{marginLeft:'20px', color:'orange', fontWeight:'600', fontFamily:'monospace' }}
           onClick={() => window.open('https://www.figma.com/file/qlqnxUpFztXMo6whDYQTCF/GovHack---NetZero---SSH?node-id=12%3A1390')}
         >
           Figma
