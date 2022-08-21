@@ -142,7 +142,7 @@ export default function Landing() {
                 
             </Stack>
             <iframe width="100%" height="315" allow='autoplay' allowfullscreen style={{border:'none', borderRadius:'16px'}}
-                src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                src="https://www.youtube.com/watch?v=NX7uQJ4cqXc?autoplay=1&mute=1">
             </iframe>
             <Stack
               sx={{ pt: 4, pb: 4 }}
